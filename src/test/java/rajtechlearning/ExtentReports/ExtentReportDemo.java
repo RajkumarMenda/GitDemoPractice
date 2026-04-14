@@ -26,10 +26,11 @@ public class ExtentReportDemo {
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("Tester", "Rajkmar"); // TesterName
 		extent.setSystemInfo("Exp", "2 Years"); // TesterName
+		extent.setSystemInfo("Company", "Qk"); // TesterName
 	}
 
 	@Test
-	public void initialDemo() {
+	public void initialDemo() {	
 
 		ExtentTest test = extent.createTest("Initial Demo");
 		WebDriverManager.chromedriver().setup();
