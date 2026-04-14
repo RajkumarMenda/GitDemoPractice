@@ -12,7 +12,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtentReportDemo {
 
-	ExtentReports extent;
+	ExtentReports extent; //This is the object for extent reports
 
 	@BeforeTest
 	public void config() {
@@ -25,6 +25,7 @@ public class ExtentReportDemo {
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("Tester", "Rajkmar"); // TesterName
+		extent.setSystemInfo("Exp", "2 Years"); // TesterName
 	}
 
 	@Test
